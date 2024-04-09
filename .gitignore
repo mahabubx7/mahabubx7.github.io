@@ -1,0 +1,37 @@
+# OS specific files
+.DS_Store
+Thumbs.db
+*.exe
+*.ini
+*.dll
+
+# IDE files
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs_analysis.dat
+*.njsproj
+*.sln
+*.sw?
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build files
+node_modules/
+dist/
+
+# Custom & others
+*.log
+*.tmp
+*.bak
+*.swp
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+!.vscode/snippets/*
+!.vscode/keybindings.json

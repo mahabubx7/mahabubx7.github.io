@@ -1,0 +1,31 @@
+<nav class="container">
+  <ul class="menu">
+    <li>
+      <a href="/" class="menu-link logo">
+        <span class="text-gray-500">iam</span><span class="text-gray-950">@</span>mahabub
+      </a>
+    </li>
+    {% assign nav = 'about,works,blog,contact'|split:',' %}
+    {% for item in nav %}
+      <li>
+        <a href="/{{ item }}" class="menu-link">{{ item }}</a>
+      </li>
+    {% endfor %}
+
+    <li class="mobile">
+      <button class="menu-link" id="hamberger" data-collapsed="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="menu">
+        {% for item in nav %}
+          <li>
+            <a href="/{{ item }}" class="menu-link">{{ item }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{{ title }}</title>
+    <meta name="author" content="{{ author }}">
+    <meta property="og:keywords" content="{{ og.keywords }}">
+    <meta property="og:title" content="{{ og.title }}">
+    <meta property="og:description" content="{{ og.description }}">
+    <meta property="og:image" content="{{ og.image }}">
+    <meta property="og:site_name" content="{{ og.site_name }}">
+    <meta property="og:url" content="{{ og.url }}">
+    <meta property="og:locale" content="en_US" />
+    <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+    <header id="header">
+        {% render '../components/nav.liquid' %}
+    </header>
+
+    <main id="page">
+        <div class="container">
+            <h1>{{ title }}</h1>
+        </div>
+        {% comment %} {{ content }} {% endcomment %}
+    </main>
+
+    <footer id="footer">
+        {% render '../components/footer.liquid' %}
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/src/assets/js/myQuery.js"></script>
+    <script src="/src/assets/js/scripts.js"></script>
+</body>
+</html>

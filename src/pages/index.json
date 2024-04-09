@@ -1,0 +1,12 @@
+{
+  "title": "Jr. Software Engineer",
+  "author": "Md Mahabub Alam",
+  "og": {
+    "title": "Junior Software Engineer (Full Stack)",
+    "description": "A passionate and enthusiastic software engineer with a strong background in web development and a keen interest in learning new technologies. I am a quick learner and a team player who is always eager to learn new things and take on new challenges.",
+    "image": "https://avatars.githubusercontent.com/u/122348996?v=4",
+    "keywords": "full-stack developer, web developer, mern-stack, mean-stack, pern-stack, node.js, express.js, react.js, mongodb, postgresql, javascript, graphql, rest-api, angular, neo4j, html, css, git, github, heroku, netlify, docker, gitOps, agile, scrum, tdd, jest, mocha, chai, enzyme, jest, cypress, jira, slack, zoom, vscode, postman, insomnia",
+    "site_name": "iamMahabub.Me",
+    "url": "https://iammahabub.me"
+  }
+}

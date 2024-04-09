@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #0e83cd;
+  --white: #fff;
+  --light-gray: #eaeaea;
+  --dark-gray: #333;
+  --red: #e12222;
+  --green: #1bbb1b;
+  --lightGreen: #00ff00;
+  --yellow: #ffcc00;
+  --info: #00ccff;
+  --secondGray: #6c757d;
+  --dark: #343a40;
+  --light: #f8f9fa;
+  --blue: #007bff;
+  --orange: #ec5f00;
+}
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: var(--light);
+}
+
+main {
+  @apply w-full mt-auto min-h-[80vh];
+}
+
+ul {
+  @apply capitalize;
+}
+
+a {
+  @apply text-orange-500;
+}
+
+footer {
+  @apply block w-full bg-gray-800 text-white m-0 text-center;
+  margin-top: auto;
+}
+
+.container {
+  @apply w-full max-w-[1280px] py-0 px-[8px] my-0 mx-auto;
+}
+
+/*=== Header ===*/
+#header {
+  background-color: var(--white);
+  @apply w-full flex flex-col m-0 p-0 py-1 shadow-sm;
+}
+
+.menu {
+  @apply flex w-full justify-between items-center;
+}
+
+.menu .menu-link {
+  @apply hidden py-1.5;
+  font-size: 0.85rem;
+}
+
+.menu .logo {
+  @apply flex mr-auto font-semibold;
+  color: var(--orange);
+  font-size: 1.2rem;
+  text-transform: none;
+}
+
+.mobile .menu-link {
+  @apply mx-1 flex flex-col;
+}
+
+.mobile > .menu {
+  @apply hidden;
+}
+
+#hamberger {
+  @apply flex flex-col gap-1;
+}
+
+#hamberger span {
+  @apply w-6 h-1 bg-gray-800 rounded-sm;
+}
+
+/**=== RESPONSIVE ===**/
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 90%;
+    max-width: 1440px;
+  }
+}
